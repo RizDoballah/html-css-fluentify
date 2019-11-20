@@ -15,6 +15,7 @@ header {
   background-color: #0b1654;
 }
 .container-header {
+  position: relative;
   height: 400px;
   width:  100%;
   background-image: url(../img/oldman.png);
@@ -53,58 +54,106 @@ header {
 }
 button {
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
-  background-color:#45af3d
+  background-color:#45af3d;
+}
+
+button .login {
+  background-color: none;
 }
 .header-nav ul li a {
   text-decoration: none;
   color: #fff;
 }
-.header-buttom {
+.header-bottom {
+  position: absolute;
+  position: absolute;
+  left: 7%;
+  bottom: 40%;
+  width: 85%;
+  height: 80px;
+  margin: 0 auto;
+
+}
+.header-bottom h1 {
+  color: #fff;
+  font-size: 36px;
+  width: 35%;
+  margin-bottom: 10px;
+}
+/* main */
+main {
+  height: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #b3abab;
+  text-align: center;
+}
+.section-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+}
+section h3 {
+  font-size: 24px;
+}
+section p {
+  line-height: 30px;
+  font-weight: bold;
+  color: #565353 ;
+}
+.container-main {
+  height: 500px;
   width: 85%;
   margin: 0 auto;
 }
-
-
-/* main */
-main {
-  height: 600px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: #b5524b
-}
-section {
-  width: 100%;
-  height: 100px;
-  background-color: #4b575d;
-}
 .main-top {
-  margin: 20px 0;
-
+ position: relative;
+ margin: 10px 0;
 }
 .main-top::after {
   content: "";
   display: table;
   clear: both;
 }
-.col-left, .col-center, .col-right {
+.main-top .col-left, .main-top .col-center, .main-top .col-right {
   float: left;
-  width: 18.33%;
-  margin: 0 5%;
+  width: 25%;
 }
-.col-left {
-  background-color: #e83572;
+.main-top .col-center {
+  margin: 0 12.33%;
 }
-.col-center {
-  background-color: #ce094c;
+.img-main-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  height: 100px;
 }
-.col-right {
-  background-color: #f1749e;
+.main-top h3 {
+  margin-top: 120px;
+  color: green;
+  font-size: 24px;
+  text-align: center;
+
+}
+.main-top p {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #565353
 }
 
 .main-bottom {
-  margin: 20px 0;
+margin: 20px 0;
 }
 .main-bottom::after {
   content: "";
@@ -115,18 +164,35 @@ section {
   float: left;
 }
 .main-bottom .col-left {
-  background-color: #1d021a;
   width: 35%;
   margin-left: 10%;
   margin-right: 5%;
 }
 .main-bottom .col-right {
-  background-color: #c17882;
   width: 35%;
   margin-left: 5%;
   margin-right: 10%;
 }
+.img-main-bottom {
+  height: 300px;
+}
+.main-bottom h3 {
+  font-size: 24px;
 
+}
+.main-bottom p {
+  color: #565353;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main-bottom a {
+font-weight: bold;
+color: #1b76a2
+}
+.main-bottom a :hover {
+  text-decoration: line-through;
+}
 /* footer i */
 footer {
   height: 100px;
