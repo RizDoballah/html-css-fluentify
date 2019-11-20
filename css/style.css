@@ -10,33 +10,67 @@ body {
 
 /* header */
 header {
-  height: 300px;
-  width: 100%;
-  background-color: #111e67;
+  height: 400px;
+  width:  100%;
+  background-color: #0b1654;
+}
+.container-header {
+  height: 400px;
+  width:  100%;
+  background-image: url(../img/oldman.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 105%;
+  background-size: 600px;
 }
  .header-nav {
   width: 85%;
   height: 80px;
   margin: 0 auto;
   line-height: 80px;
-  background-color: #61a4da ;
+
 }
 .header-nav::after {
   content: "";
   display: table;
   clear: both;
-} *
+}
 .header-top .menu-left {
   float: left;
 }
 .header-top .menu-right {
   float: right;
 }
+.header-nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.header-nav ul li:first-child {
+  padding-left: 0;
+}
+button {
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  background-color:#45af3d
+}
+.header-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header-buttom {
+  width: 85%;
+  margin: 0 auto;
+}
+
 
 /* main */
 main {
   height: 600px;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: #b5524b
 }
@@ -56,7 +90,7 @@ section {
 }
 .col-left, .col-center, .col-right {
   float: left;
-  width: 23%;
+  width: 18.33%;
   margin: 0 5%;
 }
 .col-left {
@@ -96,7 +130,7 @@ section {
 /* footer i */
 footer {
   height: 100px;
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: grey;
 }
